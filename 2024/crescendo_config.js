@@ -79,6 +79,17 @@ var config_data = `
     }
   ],
   "teleop": [
+    { "name": "Pickup From",
+      "code": "tpu",
+      "type": "radio",
+      "choices": {
+        "s": "Source<br>",
+        "f": "Floor<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
+      },
+      "defaultValue": "x"
+      },
     { "name": "Amp Scores",
       "code": "tas",
       "type": "counter"
@@ -90,17 +101,6 @@ var config_data = `
     { "name": "Times Amplified",
       "code": "tta",
       "type": "counter"
-    },
-    { "name": "Pickup From",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
     }
   ],
   "endgame": [
